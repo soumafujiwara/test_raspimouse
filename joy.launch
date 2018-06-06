@@ -1,0 +1,5 @@
+<launch>
+	<node pkg ="joy_tutorial" name="joy_twist" type="joy_twist.py" required="true">
+		<remap from="cml_vel" to="/raspimouse_on_gazebo/diff_drive_controller/cmd_vel" />
+	</node>
+</launch>
